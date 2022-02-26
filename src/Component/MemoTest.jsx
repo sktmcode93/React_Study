@@ -3,7 +3,7 @@ import { memo } from "react";
 const checkProps = (prev, next) => {
     console.log(prev);
     console.log(next);
-    return true;
+    return false;
 }
 
 const MemoTest = ({sta1}) => {
@@ -11,11 +11,8 @@ const MemoTest = ({sta1}) => {
         <h1>{sta1}</h1>
     )
 }
-export default MemoTest;
 
-
-
-// export default memo(MemoTest, checkProps);
+export default memo(MemoTest, checkProps);
 
 {/* <h5>{sta2}</h5> */}
 {/* <button onClick={() => console.log(sta1)}>Click</button> */}

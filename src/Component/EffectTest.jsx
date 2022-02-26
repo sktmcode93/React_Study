@@ -1,10 +1,11 @@
+import { memo } from "react";
 
-const EffectTest = () => {
+const EffectTest = memo(() => {
     return(
         <div>
             나는 왜?
         </div>
-    )   
-}
+    )
+})
 
-export default EffectTest;
+export default memo(EffectTest);
